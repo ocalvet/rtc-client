@@ -1,9 +1,8 @@
 import React from 'react'
 
-const Message = () => {
-  console.log('Messages', this.props)
+const Message = ({ message }) => {
   return (
-    <li>Message</li>
+    <div>{message.msg}</div>
   )
 }
 

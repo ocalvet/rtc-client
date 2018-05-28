@@ -1,8 +1,13 @@
 import React from 'react'
+import Message from './Message'
 
-const MessageList = () => {
+const MessageList = ({ messages }) => {
   return (
-    <ul id='messages' />
+    <div id='messages'>
+      {messages.map((m, i) => (
+        <Message key={i} message={m} />
+      ))}
+    </div>
   )
 }
 

@@ -20,6 +20,7 @@ class MessageForm extends React.Component {
   handleSendMessage () {
     const { onAddMessage } = this.props
     onAddMessage(this.state.message)
+    this.setState({ message: '' })
   }
   render () {
     return (

@@ -13,6 +13,9 @@ class ChatRoom extends React.Component {
 
   addMessage (message) {
     console.log('Message added', message)
+    this.setState({
+      messages: [...this.state.messages, { msg: message }]
+    })
   }
 
   render () {
