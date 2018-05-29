@@ -1,0 +1,11 @@
+.msg {
+  padding: 5px 10px; 
+}
+
+.msg:nth-child(odd) {
+  background: #eee; 
+}
+
+.my-msg {
+  background: #ab45a5
+}
